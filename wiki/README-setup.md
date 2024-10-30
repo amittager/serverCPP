@@ -20,9 +20,11 @@ open the terminal in the project and write "npm i".
 
 3 for android client -
 1 - clone the project
-2 - check the local.properties file and put there the location of your SDK in your computer.
-3 - in the android studio, go to file and than press on "Sync project with gradle files"
-4 - in android studio do:
+2 - for this part we use a specific branch so in android studio click on git and main branch, than on remote make sure you have no commits if there is press rollback, than choose the branch called "client-part4-(working-with-cpp-server) 
+and than click on checkout.
+3 - check the local.properties file and put there the location of your SDK in your computer.
+4 - in the android studio, go to file and than press on "Sync project with gradle files"
+5 - in android studio do:
    -press on build project/make project (hammer icon)
    
 
