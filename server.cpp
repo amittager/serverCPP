@@ -76,24 +76,6 @@ void handleClient(int client_sock) {
             if (!userId.empty() && !videoId.empty()) {
                 updateWatchHistory(userId, videoId);
                 response = "WATCH_UPDATED";
-
-                // Generate recommendations after updating the watch history
-                auto recommendations = generateRecommendations(videoId);
-                std::ostringstream oss;
-                oss << "[";
-
-                // Format recommendations as a JSON array
-                for (const auto& vid : recommendations) {
-                    oss << "\"" << vid << "\","; // Add video IDs
-                }
-                if (!recommendations.empty()) {
-                    response += ", Recommendations: [";
-                    response += oss.str();
-                    response.back() = ']';  // Replace trailing comma with closing bracket
-                } else {
-                    response += ", Recommendations: []";
-                }
-
             } else {
                 response = "ERROR: Invalid WATCH command format";
             }
@@ -110,7 +92,7 @@ void handleClient(int client_sock) {
 
                 // Format recommendations as a JSON array
                 for (const auto& vid : recommendations) {
-                    oss << "\"" << vid << "\","; // Add video IDs
+                    oss << "\"" << vid << "\",";
                 }
                 if (!recommendations.empty()) {
                     response = oss.str();
@@ -133,7 +115,7 @@ void handleClient(int client_sock) {
 }
 
 int main() {
-    const int server_port = 5555; // Port number for the server
+    const int server_port = 5555;
     int server_sock = socket(AF_INET, SOCK_STREAM, 0);
     if (server_sock < 0) {
         perror("Error creating socket");
