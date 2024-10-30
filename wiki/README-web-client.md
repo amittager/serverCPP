@@ -6,4 +6,5 @@ now you can see your profile picture and nick name in the place the login logo w
 to upload video press on the profile picture and than upload button.
 now press on the circle upload icon and choose a video file to upload, than fill its name and description and press submit.
 too see your videos press on you on the left side bar.
-to edit you video 
+to edit first make sure you logged in, and than press on a video you uploaded - to edit the name or the description press on the blue pencil icon near your name an change whatever you want and press on the save blue icon to save.
+to delete video go to you icon on the side menu, in the buttom of the page there is delete video button press on it and than choose the video you want to delete and confirm the deletion.
