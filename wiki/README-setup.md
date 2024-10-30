@@ -31,6 +31,7 @@ open the terminal in the project and write "npm i".
 we described above how to init the mongo database and the server so the server will work with it, make sure you do that also. 
 the server should be updated so you dont really need to do it in case you want to try rebuild the client here are the instructions:
 1.clone the repository 
+2.in the vs code press on the main in the bottom corner of the screen and than choose the other branch called "part-4-tcp".
 2.in the project open terminal and write "npm i" to download all the Dependencies. 
 3.still in the terminal write "npm run build", after that a folder named build will appear.
 4.copy all the things under the new build folder and paste them under the public folder in the server project, make sure to delete all the duplicates files/folders and just the new ones that you copied will be there.
