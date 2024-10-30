@@ -1,4 +1,4 @@
-after build the project as described in README-setup open you browser and go to http://localhost:880.
+after build the project as described in README-setup open you browser and go to http://localhost:880 just make sure you made the build on right branch (README-setup).
 now you are in the web app, first for register press on the login logo on the top right corner, than
 on the login page press on register, fill your details and choose profile picture and press the blue register button.
 press on the login logo again and fill the details you just registered with and than press login.
